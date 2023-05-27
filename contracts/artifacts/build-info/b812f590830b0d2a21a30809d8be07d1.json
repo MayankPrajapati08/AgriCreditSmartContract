@@ -1,0 +1,68 @@
+{
+	"id": "b812f590830b0d2a21a30809d8be07d1",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.13",
+	"solcLongVersion": "0.8.13+commit.abaa5c0e",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/BCAgentDao.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity ^0.8.0;\r\n\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"contracts/BCAgentDao.sol": {
+				"ast": {
+					"absolutePath": "contracts/BCAgentDao.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "39:23:0"
+						}
+					],
+					"src": "39:27:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,171 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_Address",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_phoneNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_bankDetails",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_kyc",
+						"type": "string"
+					}
+				],
+				"name": "addAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "addViewer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "getAdmin",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "Address",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "phoneNumber",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "bankDetails",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "kyc",
+								"type": "string"
+							}
+						],
+						"internalType": "struct GTIDSAdminContract.GTIDSAdmin",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "removeViewer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/GTIDSAdminDao.sol": "GTIDSAdminContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/GTIDSAdminDao.sol": {
+			"keccak256": "0x6379b7ad3975cfca1f9447a612bbb134be6a97af6f404a360d478f6dc77b6e06",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://c8ddca53c89e2f2cd997f5f43a68b888b903f61f2068608e46bea9f7a5df1135",
+				"dweb:/ipfs/QmakRTaA76qjm3EJRoLpjNftzgVDJddQPAWEeyKqb6RZoE"
+			]
+		}
+	},
+	"version": 1
+}

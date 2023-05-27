@@ -1,0 +1,167 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "addViewer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_organization",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_Address",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_tinNo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_gstinNo",
+						"type": "string"
+					}
+				],
+				"name": "addWarehouse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "getWarehouse",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "organization",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "Address",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "tinNo",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "gstinNo",
+								"type": "string"
+							}
+						],
+						"internalType": "struct WarehouseContract.Warehouse",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "removeViewer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/WarehouseDao.sol": "WarehouseContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/WarehouseDao.sol": {
+			"keccak256": "0x25c38f7700545196ad22f72b5b815a2eb8790a744f0408d7e5c7021d124b3da6",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5937af9c614e402f6723de635d718031a1f52bc19e2de7ecb7d814e6cfc79bed",
+				"dweb:/ipfs/QmcNtYxqpyAC66Y8khtTktwHE9HDHXk555T6q5aaE9MtfX"
+			]
+		}
+	},
+	"version": 1
+}

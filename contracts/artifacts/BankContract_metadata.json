@@ -1,0 +1,167 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_bankName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_branch",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_ifscCode",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_district",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_state",
+						"type": "string"
+					}
+				],
+				"name": "addBank",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "addViewer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "getBank",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "bankName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "branch",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "ifscCode",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "district",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "state",
+								"type": "string"
+							}
+						],
+						"internalType": "struct BankContract.Bank",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "removeViewer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BankDao.sol": "BankContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BankDao.sol": {
+			"keccak256": "0xe808fbf97ac8fe01dcfdc0b9f7b64da902abe7f00e875ec1a3adfb0bfc02b631",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://570ea123d683a7f09de37567800348b9c0553dcb78f28bac8c8851602de24c10",
+				"dweb:/ipfs/QmaEygE4bT7QWS2mZWxDVBPvgxfvLzwv1za9iPTNmWDCN8"
+			]
+		}
+	},
+	"version": 1
+}
