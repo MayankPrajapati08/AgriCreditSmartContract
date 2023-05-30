@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-contract Functionalities {
+contract SupplyChain {
     address public gtidsAdmin;
     address public warehouse;
     address public bank;
@@ -12,11 +12,13 @@ contract Functionalities {
     mapping(address => uint256) public goodsStored;
     mapping(address => bool) public isContractSigned;
     mapping(address => bool) public isLoanTaken;
+    mapping(address => address) public ownership;
 
     event GoodsStored(address indexed farmer, uint256 amount);
     event ContractSigned(address indexed farmer, address indexed warehouse);
     event LoanTaken(address indexed farmer, address indexed bank);
     event LoanRepaid(address indexed farmer, address indexed bank);
+    event OwnershipTransferred(address indexed farmer, address indexed bank);
 
     constructor(
         address _gtidsAdmin,
@@ -36,6 +38,8 @@ contract Functionalities {
         require(msg.sender == farmer, "Only the farmer can store goods.");
         goodsStored[farmer] = amount;
         emit GoodsStored(farmer, amount);
+
+        // To-do :- add details of stored goods. 
     }
 
     function signContract() external {
@@ -60,10 +64,9 @@ contract Functionalities {
         );
 
         // Transfer ownership to the bank
-        // Assuming the bank has its own ownership tracking mechanism
-        // You may need to modify this part to fit your specific requirements
-
+        ownership[farmer] = bank;
         isLoanTaken[farmer] = true;
+        emit OwnershipTransferred(farmer, bank);
         emit LoanTaken(farmer, bank);
     }
 
@@ -71,11 +74,9 @@ contract Functionalities {
         require(msg.sender == farmer, "Only the farmer can repay the loan.");
         require(isLoanTaken[farmer], "No loan has been taken for the goods.");
 
-        // Repay the loan to the bank
-        // Assuming the bank has its own loan repayment mechanism
-        // You may need to modify this part to fit your specific requirements
-
+        ownership[farmer] = farmer;
         isLoanTaken[farmer] = false;
+        emit OwnershipTransferred(farmer, farmer);
         emit LoanRepaid(farmer, bank);
     }
 }

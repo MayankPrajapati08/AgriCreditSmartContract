@@ -113,6 +113,25 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "farmer",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "bank",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "bank",
 				"outputs": [
@@ -222,6 +241,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "ownership",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "repayLoan",
 				"outputs": [],
@@ -297,11 +335,11 @@
 	},
 	"sources": {
 		"contracts/Functionalities.sol": {
-			"keccak256": "0x6ab7a163e7f42c5a9ee98fe0636dc3a743a1f2a4a7cd1a2a28c39a3e5a4e7920",
+			"keccak256": "0xde026427173ab1da63659d35e2e23e996e7afc6c9d6546bad6f9a209413672cb",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://cf0fd2da69c7b2d6a58a41fe4b94c68018c6ddf26b39432e15b4f4f8276c4669",
-				"dweb:/ipfs/QmQhVgVigHLqed9BqPPW9HpooHBXVzjQSvRsanunt6q785"
+				"bzz-raw://5455f3d5504a957ffcc6f4c79334af18b3205449dc4921d2c8f33a30269cfb0b",
+				"dweb:/ipfs/QmVFuW66GmNUdgBq9GYM7k16LU61tJfnDcQ6bhouNAedVQ"
 			]
 		}
 	},
