@@ -320,7 +320,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Functionalities.sol": "Functionalities"
+			"contracts/Functionalities.sol": "Functionaliti"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -335,11 +335,11 @@
 	},
 	"sources": {
 		"contracts/Functionalities.sol": {
-			"keccak256": "0x939f8b7c91f5fcea6ca13e7523fb03734a39841ead68cf3f74ea4f194f0d2166",
+			"keccak256": "0x4460b0903bea1e5e1d283f48b9e8b21f81e76203cdd437dd9869d115d4351050",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e4e9d5556e76a308c2227659b4c99f3cc4662d83d8928243c951083f2d457bd8",
-				"dweb:/ipfs/QmeYHsv1S9vAGLX21ksH1AtJHVwy5hgYq4Dt1kwcizE6K7"
+				"bzz-raw://3e6d65dcbf71f9113f3585166365d7506f6926edcfc6837d4229825c4435a348",
+				"dweb:/ipfs/QmNVk456FJynFgBfPp3XDRCTTh2BMsnpegbH5iUy2EvTHw"
 			]
 		}
 	},

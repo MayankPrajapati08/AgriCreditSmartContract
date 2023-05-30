@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-contract SupplyChain {
+contract Functionalities {
     address public gtidsAdmin;
     address public warehouse;
     address public bank;
